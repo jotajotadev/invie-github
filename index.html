@@ -10,12 +10,24 @@
             border: 20px solid gray;
         }
         img{
-            display: block;
+            display: none;
             width:100%;
+        }
+        .responsive{
+            display: block;
+        }
+        @media screen and (min-width: 768px){
+            img{
+                display: block;
+            }
+            .responsive{
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
+    <img src="images/invie-responsive.png" alt="" class="responsive">
     <img src="images/header.jpg" alt="">
     <img src="images/hero.jpg" alt="">
     <img src="images/acustica.jpg" alt="">
